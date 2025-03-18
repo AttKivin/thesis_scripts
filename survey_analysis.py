@@ -50,7 +50,7 @@ def filter_adjectives(candidates):
     return valid
 
 # Function to extract nouns (common themes) using spaCy, returning lemmatized nouns.
-def extract_nouns_and_adjectives(text):
+def extract_nouns(text):
     if pd.isna(text):
         return []
     doc = nlp(str(text).lower())
